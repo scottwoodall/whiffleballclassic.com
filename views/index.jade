@@ -1,0 +1,72 @@
+doctype 5
+html(lang="en")
+  head
+    meta(charset="utf8")
+    title whiffleballclassic.com
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="/assets/bootstrap/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+    link(href="/assets/bootstrap/css/bootstrap-responsive.min.css", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=PT+Serif", rel="stylesheet", type="text/css")
+    style
+      body {
+        font-family: 'PT Serif', serif;
+      }
+
+    // if le IE 9
+      script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    script(src="/assets/bootstrap/js/bootstrap.min.js")
+  body
+    div.navbar
+      div.navbar-inner
+        div.container
+          a.brand(href="#") Whiffle Ball Classic
+
+    div.container
+      div.hero-unit
+        h1 Annual Whiffle Ball Classic
+        p
+        div#myCarousel.carousel
+          div.carousel-inner
+            div.item.active
+              img(style="display:block; margin-left:auto; margin-right:auto;", src="/assets/images/sky_logo.gif")
+
+    div.container
+      div.row
+        div.span12
+          div.page-header
+            h1 Why
+            br 
+            p Chicks dig the long ball, and on this day you can swing for a fence less than 100 feet away. Raising proceeds for an area non-profit and a terrific social environment are also other reasons given for participation.
+            p We also want to raise proceeds and awareness for St. Jude's Children Hospital.
+            
+            p The venue will have ample parking, a port-a-potty, pop-up tents, tables for games (i.e. flippy cup), corn-hole and music. We recommend participants bring chairs, additional refreshments if interested and a designated driver.  Bring extra cash for 50/50 drawing and other giveaways.
+
+      br
+      div.row
+        div.span3
+          h2 Where
+          address
+            p 1733 Beineke Road
+            p Fort Wayne, IN 46808
+            p
+                a(href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1733+Beineke+Rd,+Fort+Wayne,+IN+46808&sll=41.089698,-85.196006&sspn=0.007148,0.018818&ie=UTF8&hq=&hnear=1733+Beineke+Rd,+Fort+Wayne,+Allen,+Indiana+46808&ll=41.091061,-85.196013&spn=0.007148,0.018818&z=16&iwloc=A") Google Maps
+
+        div.span3
+          h2 Registration
+          a(href="https://docs.google.com/spreadsheet/embeddedform?formkey=dE1JMlF6WGJyanhyRDk3Yjg1WDljV0E6MQ") Team captains should fill out this Google Form to register their teams.
+
+        div.span3
+          h2 When
+          p Saturday, September 10, 2011
+          p Registration 10:00 AM
+          p First Pitch 10:30 AM
+
+        div.span3
+          h2 Cost
+          p Flat payment of $100 per team plus $10 per player (for the team shirt.) Shirt orders and money due by August 11th.
+          p Mail payments (checks) to: SKD CPA 4230 Indiana Ave Fort Wayne, IN 46807
+    script(type="text/javascript")
+      $(document).ready(function () {
+        $('.carousel').carousel();
+      });
